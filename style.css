@@ -1,0 +1,73 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.background {
+  background-image: url('Images/copiloteBG2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+.discussion-bg {
+  width: auto; /* Ajustez la largeur automatiquement pour maintenir le rapport d'aspect de l'image */
+  max-width: 100%;
+
+  position: absolute; /* Positionnement absolu pour l'aligner correctement */
+  bottom: calc(25vw + 10px); /* Aligné juste au-dessus du bouton */
+  /* top: 0px; */
+  left: 50%; /* Centrer l'image horizontalement */
+
+  /* height: calc(100% - 25%); Aligné juste au-dessus du bouton */
+
+  transform: translateX(-50%); /* Utilisez la transformation pour centrer parfaitement l'image */
+}
+
+.blue-button {
+  width: 100%;
+  max-height: 25vw;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* animation: breathe 2s infinite ease-in-out;  */
+  animation: doubleClick 2s infinite; 
+
+}
+
+.blue-button img {
+  width: 100%; /* Ajustez la largeur maximale pour que l'image ne dépasse pas les limites du bouton */
+  height: auto; /* Ajustez la largeur maximale pour que l'image ne dépasse pas les limites du bouton */
+  /* height: auto; Maintenez le rapport d'aspect de l'image */
+}
+
+@keyframes breathe {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes doubleClick {
+  0%, 10%, 20%, 100% {
+    transform: scale(1);
+  }
+  5%, 15% {
+    transform: scale(0.9);
+  }
+}
