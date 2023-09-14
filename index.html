@@ -11,7 +11,7 @@
 <body>
 <div id="header">
   <button class="app-icon-btn"></button>
-  <button class="menu-btn"></button>
+  <button class="menu-btn" id="menu-button"></button>
 </div>
 <div id="content">
       <div class="text-container">
@@ -73,5 +73,13 @@
 
          
 </div>
+
+<script>
+  const menuButton = document.getElementById('menu-button');
+
+  menuButton.addEventListener('click', () => {
+    alert('Téléchargez l\'app pour en savoir plus');
+  });
+</script>
 </body>
 </html>
