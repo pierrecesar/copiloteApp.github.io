@@ -39,7 +39,8 @@ body, html {
 
 }
 #content {
-  margin-top: 0px;
+
+  margin-top: 50px;
   /* height: calc(100% - 80px); */
   background-image: url('assets/bg.jpg');
   background-size: 100% auto; /* Ajuste la largeur à 100% et la hauteur sera ajustée automatiquement */
@@ -51,7 +52,12 @@ body, html {
 
 }
 
+@media (max-width: 768px) {
+  #content {
+    margin-top: 50px;
 
+  }
+}
 .text-container {
   margin-top: 16vw;
   font-family: 'Arial';
