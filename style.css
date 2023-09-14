@@ -44,7 +44,7 @@ body, html {
   /* height: calc(100% - 80px); */
   background-image: url('assets/bg.jpg');
   background-size: 100% auto; /* Ajuste la largeur à 100% et la hauteur sera ajustée automatiquement */
-  background-repeat: no-repeat; /* Empêche l'image de se répéter */
+  background-repeat: repeat-y; /* Empêche l'image de se répéter */
   overflow-y: auto;
   justify-content: center;
   align-items: center;
