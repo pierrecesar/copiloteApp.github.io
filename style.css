@@ -68,6 +68,7 @@ body, html {
   color: black;
   height: 200px;
   background-image: url('assets/bgBlurred.png');
+  text-align: center;
   background-size: 100% 100%; /* Ajuste la largeur à 100% et la hauteur sera ajustée automatiquement */
 }
 
