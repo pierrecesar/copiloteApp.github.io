@@ -97,6 +97,13 @@ body, html {
   /* padding: 20px; */
 }
 
+@media (max-width: 768px) {
+  .rectangle-container {
+    margin-top: -140px;
+
+  }
+}
+
 .rectangle {
   background-color: white;
   border-radius: 20px;
