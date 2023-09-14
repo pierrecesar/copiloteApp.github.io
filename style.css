@@ -44,7 +44,7 @@ body, html {
   /* height: calc(100% - 80px); */
   background-image: url('assets/bg2.jpg');
   background-size: 100% auto; /* Ajuste la largeur à 100% et la hauteur sera ajustée automatiquement */
-  background-repeat: repeat-y; /* Empêche l'image de se répéter */
+  background-repeat: repeat-y; 
   overflow-y: auto;
   justify-content: center;
   align-items: center;
@@ -76,6 +76,7 @@ body, html {
   .text-container {
     /* margin-top: 22vw; */
     font-size: 1.5em; /* Taille du texte pour les appareils mobiles */
+    margin-bottom: -60px;
   }
 }
 
