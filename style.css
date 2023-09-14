@@ -2,7 +2,8 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: 'Arial, sans-serif';
+  font-family: 'Arial';
+  background-color: #DBECFA	;
 }
 #header {
   position: fixed;
@@ -75,7 +76,7 @@ body, html {
 @media (max-width: 768px) {
   .text-container {
     /* margin-top: 22vw; */
-    font-size: 1.5em; /* Taille du texte pour les appareils mobiles */
+    font-size: 1.4em; /* Taille du texte pour les appareils mobiles */
     margin-bottom: -60px;
   }
 }
