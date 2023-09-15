@@ -14,10 +14,10 @@
   <!-- <button class="menu-btn" id="menu-button"></button> -->
   <div class="navbar">
     <div class="dropdown">
-      <button class="dropbtn">
+      <button class="dropbtn"  onclick="myFunction(this)">
         <i class="fa fa-caret-down"></i>
       </button>
-      <div class="dropdown-content">
+      <div class="dropdown-content", id="dropdown-content">
         <a href="#">Télécharger</a>
         <a href="#">À propos</a>
         <a href="#">Nous contacter</a>
@@ -93,5 +93,21 @@
     alert('Téléchargez l\'app pour en savoir plus');
   });
 </script>
+<script>
+  function myFunction(x) {
+    // x.classList.toggle("change");
+    var result = document.getElementById('dropdown-content').style.display == 'none'
+    console.log("hello ", result)
+
+    if (result == 0) {
+      document.getElementById('dropdown-content').style.cssText = 'display: none'
+    } else {
+      document.getElementById('dropdown-content').style.cssText = 'display: block'
+    }
+
+    // const menuButton = document.getElementsByClassName('dropdown-content');
+    //    menuButton.css
+  }
+  </script>
 </body>
 </html>
