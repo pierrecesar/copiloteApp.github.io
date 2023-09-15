@@ -9,23 +9,30 @@
 
 </head>
 <body>
-<div id="header">
-  <a href="index.html" class="app-icon-btn"> </a>
-
+  <div id="header">
+    <a href="index.html" class="app-icon-btn"> </a>
+    <!-- <button class="menu-btn" id="menu-button"></button> -->
     <div class="navbar">
-    <div class="dropdown">
-      <button class="dropbtn"  onclick="myFunction(this)">
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content", id="dropdown-content">
-        <a href="index.html">🏠  Accueil</a>
-        <a href="https://apps.apple.com/ca/app/copilote-immo/id1663623499?l=fr">📲  Télécharger l'app</a>
-        <a href="about.html">🧑‍💻  À propos de l'app</a>
-        <a href="contact.html">✉️  Contacter l'équipe</a>
+      <div class="dropdown">
+  
+        <div class="dropbtn" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+  
+        <!-- <button class="dropbtn"  onclick="myFunction(this)">
+          
+        </button> -->
+        <div class="dropdown-content", id="dropdown-content">
+          <a href="index.html">🏠  Accueil</a>
+          <a href="https://apps.apple.com/ca/app/copilote-immo/id1663623499?l=fr">📲  Télécharger l'app</a>
+          <a href="about.html">🧑‍💻  À propos de l'app</a>
+          <a href="contact.html">✉️  Contacter l'équipe</a>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
 <div id="content">
    
@@ -60,19 +67,16 @@
   });
 </script>
 <script>
-  function myFunction(x) {
-    // x.classList.toggle("change");
-    var result = document.getElementById('dropdown-content').style.display == 'none'
+   function myFunction(x) {
+    x.classList.toggle("change");
+    var result = document.getElementById('dropdown-content').style.display == 'block'
     console.log("hello ", result)
 
-    if (result == 0) {
+    if (result == true) {
       document.getElementById('dropdown-content').style.cssText = 'display: none'
     } else {
       document.getElementById('dropdown-content').style.cssText = 'display: block'
     }
-
-    // const menuButton = document.getElementsByClassName('dropdown-content');
-    //    menuButton.css
   }
   </script>
 </body>
